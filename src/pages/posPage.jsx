@@ -1,7 +1,6 @@
 import React, { useMemo, useState } from 'react'
 import { Row, Col, Card, Input, Select, Button, Typography, Space, Form, Badge } from 'antd';
 import { DeleteOutlined, PlusOutlined } from '@ant-design/icons';
-import Title from 'antd/es/skeleton/Title';
 import LabeledInput from '../Components/LabeledInput';
 import ProductItem from '../Components/ProductItem';
 

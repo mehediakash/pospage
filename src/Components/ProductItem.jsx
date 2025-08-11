@@ -1,12 +1,10 @@
+import React from 'react';
+import { Card, Row, Col, Input, Typography, Button } from 'antd';
+import { DeleteOutlined } from '@ant-design/icons';
 
-import React from 'react'
-import { Row, Col, Card, Input, Select, Button, Typography, Space, Form, Badge } from 'antd';
-import { DeleteOutlined, PlusOutlined } from '@ant-design/icons';
+const { Text } = Typography;
 
-
-const ProductItem = ({ item, onRemove, onQtyChange }) => {
-    const { Title, Text } = Typography;
-    const { Option } = Select;
+export default function ProductItem({ item, onRemove, onQtyChange }) {
   return (
     <Card bodyStyle={{ padding: 14, position: 'relative' }} style={{ marginBottom: 12, borderRadius: 6 }}>
       <Button
@@ -19,26 +17,11 @@ const ProductItem = ({ item, onRemove, onQtyChange }) => {
 
       <Row gutter={[12, 6]} align="middle">
         <Col xs={24} sm={12} md={8}>
-          <div>
-            <Text strong>Name </Text>
-            <Text> {item.name}</Text>
-            <div style={{ marginTop: 6 }}>
-              <Text>Size </Text>
-              <Text>{item.size}</Text>
-            </div>
-            <div>
-              <Text>Color </Text>
-              <Text>{item.color || 'Not found'}</Text>
-            </div>
-            <div>
-              <Text>Available Stock </Text>
-              <Text>{item.stock} Units</Text>
-            </div>
-            <div>
-              <Text>SKU </Text>
-              <Text code>{item.sku}</Text>
-            </div>
-          </div>
+          <Text strong>Name </Text><Text> {item.name}</Text>
+          <div><Text>Size </Text>{item.size}</div>
+          <div><Text>Color </Text>{item.color || 'Not found'}</div>
+          <div><Text>Available Stock </Text>{item.stock} Units</div>
+          <div><Text>SKU </Text><Text code>{item.sku}</Text></div>
         </Col>
 
         <Col xs={24} sm={12} md={10}>
@@ -58,6 +41,4 @@ const ProductItem = ({ item, onRemove, onQtyChange }) => {
       </Row>
     </Card>
   );
-};
-
-export default ProductItem
+}
