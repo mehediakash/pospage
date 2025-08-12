@@ -40,3 +40,64 @@
 .read-the-docs {
   color: #888;
 }
+
+.product-info-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #f0f0f0;
+  padding: 16px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+}
+
+.product-details {
+  flex-grow: 1;
+}
+
+.product-pricing {
+  min-width: 150px;
+  text-align: right;
+}
+
+.sku-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.sku-tag {
+  background-color: #f0f0f0;
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.remove-sku-icon {
+  cursor: pointer;
+  color: #ff4d4f;
+}
+
+.summary-container {
+  padding: 16px;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.discount-controls {
+  display: flex;
+  gap: 8px;
+}
+
+.total-payable {
+  font-size: 1.2em;
+  font-weight: bold;
+}
