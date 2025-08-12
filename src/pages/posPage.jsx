@@ -9,7 +9,7 @@ import { getProductByBarcode } from '../services/productService';
 const POSPage = () => {
   const { Title, Text } = Typography;
   const { Option } = Select;
-  const [invoice] = useState('17548141805247ADEF5');
+  const [invoice] = useState('1111111111111');
   const [productQuery, setProductQuery] = useState('');
   const [customerQuery, setCustomerQuery] = useState('');
   const [discountType, setDiscountType] = useState('fixed');
